@@ -42,7 +42,7 @@ export default class Form extends Component {
                         <div className='col-md-10' style={{ border: "2px solid", borderRadius: "50px", padding: "30px", backgroundColor: "#fff", color: "#fff" }}>
                             <form>
                                 <div className="mb-3">
-                                    <h1>Todo App</h1>
+                                    <h1>Todo App New</h1>
                                     <input type="text" className="form-control" id="todo" placeholder="Try typing: Do Exercise" onChange={this.changeTodoInput} value={this.state.inputData} />
                                 </div>
                                 <button type="button" className="btn btn-primary w-100" style={{ borderRadius: "50px", padding: "5px" }} onClick={this.handleSubmit}>Add
