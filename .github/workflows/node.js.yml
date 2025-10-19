@@ -7,13 +7,16 @@ on:
     branches: [ main, master ]
 
 jobs:
-  steps:
+  build:                     # ✅ job name (must exist)
+    runs-on: ubuntu-latest   # ✅ required before steps
+
+    steps:
       - uses: actions/checkout@v4
 
-      - name: Use Node.js ${{ matrix.node-version }}
+      - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: ${{ matrix.node-version }}
+          node-version: 20.x
           cache: 'npm'
 
       - name: Install dependencies
